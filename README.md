@@ -65,8 +65,13 @@ To quickly verify the mobile app, follow these steps:
 1. **Connect to Backend**: Ensure your backend is running at the URL specified in `app.json` (or use the provided AWS live URL).
 2. **Launch App**: Run `npx expo start --web` (or scan the QR code with Expo Go).
 3. **Use Test Accounts**:
-   - `ACC-10001`: Test a **Surplus Payment** (Pay ₹12k instead of ₹10k) to see the next month's due reduce.
-   - `ACC-10002`: Test an **Underpayment** (Pay ₹5k instead of ₹15k) to see the rollover with interest.
+   | Account Number | Monthly EMI | Total Balance | Scenario |
+   |----------------|-------------|---------------|----------|
+   | `ACC-10001`    | ₹10,000     | ₹120,000      | Standard Loan |
+   | `ACC-10002`    | ₹15,000     | ₹180,000      | High Value |
+   | `ACC-10003`    | ₹5,000      | ₹60,000       | Low Value |
+   | `ACC-10004`    | ₹20,000     | ₹240,000      | Premium |
+   | `ACC-10005`    | ₹12,000     | ₹144,000      | Mid-range |
 4. **Observe Success Screen**: Notice the professional Transaction ID and the updated "Next Month's Due" amount.
 
 ---
