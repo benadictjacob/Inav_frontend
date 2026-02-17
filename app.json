@@ -29,7 +29,7 @@
             "favicon": "./assets/favicon.png"
         },
         "extra": {
-            "apiUrl": "http://localhost:3000/api"
+            "apiUrl": "http://51.20.81.194:3000/api"
         }
     }
 }
