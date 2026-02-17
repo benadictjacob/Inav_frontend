@@ -13,7 +13,8 @@
       "bundleIdentifier": "com.paymentcollection.app"
     },
     "android": {
-      "package": "com.paymentcollection.app"
+      "package": "com.paymentcollection.app",
+      "usesCleartextTraffic": true
     },
     "web": {},
     "extra": {
