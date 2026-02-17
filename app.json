@@ -1,35 +1,36 @@
 {
-    "expo": {
-        "name": "Payment Collection",
-        "slug": "payment-collection",
-        "version": "1.0.0",
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "userInterfaceStyle": "light",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#1a1a2e"
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true,
-            "bundleIdentifier": "com.paymentcollection.app"
-        },
-        "android": {
-            "adaptiveIcon": {
-                "foregroundImage": "./assets/adaptive-icon.png",
-                "backgroundColor": "#1a1a2e"
-            },
-            "package": "com.paymentcollection.app"
-        },
-        "web": {
-            "favicon": "./assets/favicon.png"
-        },
-        "extra": {
-            "apiUrl": "http://51.20.81.194:3000/api"
+  "expo": {
+    "name": "Payment Collection",
+    "slug": "payment-collection",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.paymentcollection.app"
+    },
+    "android": {
+      "package": "com.paymentcollection.app"
+    },
+    "web": {},
+    "extra": {
+      "apiUrl": "http://51.20.81.194:3000/api",
+      "eas": {
+        "projectId": "81fbe199-b6df-44d0-823f-7d781058605d"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.25"
+          }
         }
-    }
+      ]
+    ]
+  }
 }
